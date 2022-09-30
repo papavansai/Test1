@@ -8,7 +8,7 @@
     <title>Forms</title>
     <style>
         .header {
-            color: rgba(220, 73, 20, 0.703);
+            color: rgba(145, 73, 20, 0.703);
             background-color: rgba(250, 235, 215, 0.718);
             text-align: center;
             border-radius: 10px;
@@ -26,15 +26,15 @@
         
         form {
             border-radius: 20px;
-            background-image: url(https://i.pinimg.com/originals/40/6d/8a/406d8a189a7f9d3acb8e08ae1f775a0e.jpg)
+            background-color: rgba(250, 235, 215, 0.718);)
         }
         
         .btn {
-            text-align: center;
+            text-align: right;
             text-decoration: solid;
-            align-items: center;
+            align-items: right;
             margin-left: 50px;
-            background-color: rgba(127, 255, 212, 0.729);
+            background-color: rgba(127, 55, 212, 0.729);
             padding: 10px 130px 10px 130px;
         }
     </style>
@@ -49,15 +49,15 @@
             <legend>
                 personal details:
             </legend>
-            <label for="text"> User Name; </label>
+            <label for="text"> Username: </label>
             <br>
             <input type="text" placeholder="enter your full name" required>
             <br><br>
-            <label for="text"> Emailid; </label>
+            <label for="text"> Email: </label>
             <br>
             <input type="text" placeholder="enter your Emailid" required pattern="(?=.*\d)(?=.*" [@])>
             <br><br>
-            <label for="text"> Password; </label>
+            <label for="text"> Password: </label>
             <br>
             <input type="text" placeholder="enter your Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&*!]).{8,}" title="Password must contain atleast one number, atleast one special character, lower and uppercase and it should be atleast 8 or more characters">
         </fieldset>
@@ -66,7 +66,7 @@
         <fieldset>
             <legend> select your Gender</legend>
             <input type="radio" name="gender">Male <br>
-            <input type="radio" name="gender">FeMale <br>
+            <input type="radio" name="gender">Female <br>
             <input type="radio" name="gender">Others <br>
         </fieldset>
 
@@ -123,3 +123,5 @@
 </body>
 
 </html>
+
+     
