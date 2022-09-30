@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .header {
+            color: rgba(220, 73, 20, 0.703);
+            background-color: rgba(250, 235, 215, 0.718);
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        * {}
+        
+        legend {
+            text-align: center;
+        }
+        
+        fieldset {
+            margin-right: 50px;
+        }
+        
+        form {
+            border-radius: 20px;
+            background-image: url(https://i.pinimg.com/originals/40/6d/8a/406d8a189a7f9d3acb8e08ae1f775a0e.jpg)
+        }
+        
+        .btn {
+            text-align: center;
+            text-decoration: solid;
+            align-items: center;
+            margin-left: 50px;
+            background-color: rgba(127, 255, 212, 0.729);
+            padding: 10px 130px 10px 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="header">My Application Form</h1>
+
+    <form action="C:\Users\hi\OneDrive\Desktop\Submitted.html">
+        <br> <br>
+        <fieldset>
+            <legend>
+                personal details:
+            </legend>
+            <label for="text"> User Name; </label>
+            <br>
+            <input type="text" placeholder="enter your full name" required>
+            <br><br>
+            <label for="text"> Emailid; </label>
+            <br>
+            <input type="text" placeholder="enter your Emailid" required pattern="(?=.*\d)(?=.*" [@])>
+            <br><br>
+            <label for="text"> Password; </label>
+            <br>
+            <input type="text" placeholder="enter your Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&*!]).{8,}" title="Password must contain atleast one number, atleast one special character, lower and uppercase and it should be atleast 8 or more characters">
+        </fieldset>
+        <br> <br>
+
+        <fieldset>
+            <legend> select your Gender</legend>
+            <input type="radio" name="gender">Male <br>
+            <input type="radio" name="gender">FeMale <br>
+            <input type="radio" name="gender">Others <br>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>select your skill</legend>
+            <input type="checkbox" name="checkbox">c <br>
+            <input type="checkbox" name="checkbox">c++ <br>
+            <input type="checkbox" name="checkbox">Java <br>
+            <input type="checkbox" name="checkbox">Phyton <br>
+            <input type="checkbox" name="checkbox">Sql <br>
+            <input type="checkbox" name="checkbox">.net <br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Experince:</legend>
+            <select name="Experince id =" Experince>
+            <option value="select">Select</option>
+            <option value="0-1">0 to 1 years</option>
+            <option value="1-2">1 to 2 years</option>
+            <option value="2-3">2 to 3 years</option>
+            <option value="3-4">3 to 4 years</option>
+            <option value="4-5">4 to 5 years</option>
+            <option value="Above 5">More than 5 years</option>
+
+            </select>
+
+
+        </fieldset> <br>
+        <fieldset>
+            <legend>
+                Address:
+            </legend>
+            <textarea name="Address" cols="30" rows="5">
+
+            </textarea>
+
+        </fieldset> <br> <br>
+
+        <br>
+        <button class="btn">Submit </button>
+
+
+
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>
